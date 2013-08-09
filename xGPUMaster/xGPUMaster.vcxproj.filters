@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CudaCompile Include="kernel.cu" />
+    <CudaCompile Include="fft\FFT8.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\FFT16.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\FFT64.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\FFT256.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\FFT512.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\FFT1024.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\FFT2048.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\FFT4096.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\FFT8192.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\IFFT8.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\IFFT16.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\IFFT64.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\IFFT256.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\IFFT512.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\IFFT1024.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\IFFT2048.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\IFFT4096.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="fft\IFFT8192.cu">
+      <Filter>fft</Filter>
+    </CudaCompile>
+    <CudaCompile Include="cuda_xengine.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cube">
+      <UniqueIdentifier>{67fd0c3f-ef4e-479b-937b-2d1f3e6b72a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fft">
+      <UniqueIdentifier>{7066ce09-e89d-49eb-80e9-0fbbe45bdfd3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cube\cube.c">
+      <Filter>cube</Filter>
+    </ClCompile>
+    <ClCompile Include="fft\main.cpp">
+      <Filter>fft</Filter>
+    </ClCompile>
+    <ClCompile Include="cpu_util.c" />
+    <ClCompile Include="cuda_correlator.c" />
+    <ClCompile Include="omp_xengine.c" />
+    <ClCompile Include="xgpuinfo.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cube\cube.h">
+      <Filter>cube</Filter>
+    </ClInclude>
+    <ClInclude Include="fft\codelets.h">
+      <Filter>fft</Filter>
+    </ClInclude>
+    <ClInclude Include="xgpu.h" />
+    <ClInclude Include="xgpu_info.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fft\FFT.sln">
+      <Filter>fft</Filter>
+    </None>
+    <None Include="fft\License.txt">
+      <Filter>fft</Filter>
+    </None>
+    <None Include="fft\Makefile">
+      <Filter>fft</Filter>
+    </None>
+    <None Include="bench" />
+    <None Include="gen_xgpu_version.sh" />
+    <None Include="Makefile" />
+    <None Include="shared_transfer_4.cuh" />
+    <None Include="shared_transfer_8.cuh" />
+  </ItemGroup>
+</Project>
